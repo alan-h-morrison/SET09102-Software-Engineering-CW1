@@ -15,3 +15,5 @@ E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.exe
 E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.pdb
 E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Message.g.cs
 E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Message.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\File.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\File.baml

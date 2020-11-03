@@ -13,7 +13,7 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Message Body" VerticalAlignment="Top" Margin="50,187,0,0" FontSize="30"/>
         <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="50,649,0,0" FontSize="24" Height="50" Click="btnBack_Click"/>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Right" VerticalAlignment="Top" Width="125" Margin="0,649,50,0" FontSize="24" Height="50" Click="btnSubmit_Click"/>
-        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Right" VerticalAlignment="Top" Width="125" Margin="0,727,50,0" FontSize="24" Height="50" Click="btnSubmit_Click"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Right" Width="125" Margin="0,727,50,0" FontSize="24" Click="btnSubmit_Click" Height="50" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

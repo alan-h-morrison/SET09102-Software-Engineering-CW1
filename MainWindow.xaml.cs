@@ -35,7 +35,10 @@ namespace Bank
 
         private void btnFile_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Hide();
+            File fileWindow = new File();
+            fileWindow.ShowDialog();
+            this.Close();
         }
     }
 }
