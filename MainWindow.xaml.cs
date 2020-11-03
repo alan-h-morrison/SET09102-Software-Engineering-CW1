@@ -24,5 +24,18 @@ namespace Bank
         {
             InitializeComponent();
         }
+
+        private void btnMessage_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Message messageWindow = new Message();
+            messageWindow.ShowDialog();
+            this.Close();
+        }
+
+        private void btnFile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

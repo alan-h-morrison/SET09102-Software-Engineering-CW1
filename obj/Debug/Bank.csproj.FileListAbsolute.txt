@@ -1,0 +1,17 @@
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Debug\Bank.exe.config
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Debug\Bank.exe
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Debug\Bank.pdb
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.csprojAssemblyReference.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\MainWindow.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\App.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank_MarkupCompile.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank_MarkupCompile.lref
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\MainWindow.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.g.resources
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.Properties.Resources.resources
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.csproj.GenerateResource.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.exe
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.pdb
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Message.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Message.baml
