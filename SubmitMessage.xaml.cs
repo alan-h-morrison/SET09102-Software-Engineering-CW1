@@ -61,7 +61,6 @@ namespace Bank
                     msg.messageID = txtID.Text.ToUpper();
                     msg.messageBody = txtBody.Text;
 
-
                     if (msg.messageID.StartsWith("S"))
                     {
                         msg.newSMS();
@@ -80,6 +79,9 @@ namespace Bank
             {
                 MessageBox.Show(ex.Message);
             }
+
+           
+
             MessageBox.Show("id: " + msg.messageID + "\nbody: " + msg.messageBody + "\nmessage type: " + test);
         }
     }
