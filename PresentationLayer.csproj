@@ -55,7 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="File.xaml">
+    <Page Include="DisplayEmail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DisplaySMS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DisplayTweet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubmitFIle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -67,21 +79,30 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="File.xaml.cs">
-      <DependentUpon>File.xaml</DependentUpon>
+    <Compile Include="DisplayEmail.xaml.cs">
+      <DependentUpon>DisplayEmail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySMS.xaml.cs">
+      <DependentUpon>DisplaySMS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayTweet.xaml.cs">
+      <DependentUpon>DisplayTweet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitFIle.xaml.cs">
+      <DependentUpon>SubmitFIle.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Message.xaml">
+    <Page Include="SubmitMessage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Message.xaml.cs">
-      <DependentUpon>Message.xaml</DependentUpon>
+    <Compile Include="SubmitMessage.xaml.cs">
+      <DependentUpon>SubmitMessage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -107,6 +128,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business Layer\BusinessLayer.csproj">
+      <Project>{6d4903b5-3830-451c-8e7f-30bc4d6833a4}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

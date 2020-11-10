@@ -1,0 +1,28 @@
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Debug\Bank.exe.config
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Debug\Bank.exe
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Debug\Bank.pdb
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Debug\Business Layer.dll
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Debug\Business Layer.pdb
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\PresentationLayer.csprojAssemblyReference.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\DisplayEmail.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\DisplaySMS.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\DisplayTweet.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\SubmitFIle.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\MainWindow.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\SubmitMessage.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\App.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank_MarkupCompile.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank_MarkupCompile.lref
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\DisplayEmail.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\DisplaySMS.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\DisplayTweet.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\SubmitFIle.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\MainWindow.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\SubmitMessage.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.g.resources
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.Properties.Resources.resources
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\PresentationLayer.csproj.CopyComplete
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.exe
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Debug\Bank.pdb

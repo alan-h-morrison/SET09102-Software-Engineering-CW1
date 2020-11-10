@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BusinessLayer;
+
 
 namespace Bank
 {
@@ -28,7 +30,7 @@ namespace Bank
         private void btnMessage_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Message messageWindow = new Message();
+            SubmitMessage messageWindow = new SubmitMessage();
             messageWindow.ShowDialog();
             this.Close();
         }
