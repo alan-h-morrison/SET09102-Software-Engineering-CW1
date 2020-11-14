@@ -66,7 +66,12 @@ namespace Bank
                     }
                     else if (msg.messageID.StartsWith("E"))
                     {
-                        msg.newEmail();
+                        Email email = msg.newEmail();
+
+                        this.Hide();
+                        DisplayEmail displayEmail = new DisplayEmail(email);
+                        displayEmail.ShowDialog();
+                        this.Close();
                     }
                     else if (msg.messageID.StartsWith("T"))
                     {

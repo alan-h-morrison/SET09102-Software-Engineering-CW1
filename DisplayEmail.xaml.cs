@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BusinessLayer;
 
 namespace Bank
 {
@@ -19,9 +20,20 @@ namespace Bank
     /// </summary>
     public partial class DisplayEmail : Window
     {
-        public DisplayEmail()
+        private Email email;
+        public DisplayEmail(Email newEmail)
         {
             InitializeComponent();
+
+            email = newEmail;
+
+            txtID.Text = email.emailID;
+            txtSender.Text = email.emailSender.ToString();
+            txtSubject.Text = email.emailSubject;
+
+            string str = String.Join("\n", email.emailBody);
+            txtBody.Text = str;
+
         }
     }
 }
