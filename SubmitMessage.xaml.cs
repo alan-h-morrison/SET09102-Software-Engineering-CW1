@@ -52,7 +52,6 @@ namespace Bank
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
             Message msg = new Message();
-            string test = null;
 
             try
             {
@@ -71,7 +70,12 @@ namespace Bank
                     }
                     else if (msg.messageID.StartsWith("T"))
                     {
-                        msg.newTweet();
+                        Tweet tweet = msg.newTweet();
+
+                        this.Hide();
+                        DisplayTweet displayTweet = new DisplayTweet(tweet);
+                        displayTweet.ShowDialog();
+                        this.Close();
                     }
                 }
             }
@@ -79,10 +83,6 @@ namespace Bank
             {
                 MessageBox.Show(ex.Message);
             }
-
-           
-
-            MessageBox.Show("id: " + msg.messageID + "\nbody: " + msg.messageBody + "\nmessage type: " + test);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,19 @@ namespace Bank
     /// </summary>
     public partial class DisplayTweet : Window
     {
-        public DisplayTweet()
+        private Tweet tweet;
+        public DisplayTweet(Tweet newTweet)
         {
             InitializeComponent();
+
+            tweet = newTweet;
+
+            txtID.Text = tweet.tweetID;
+            txtSender.Text = tweet.tweetSender;
+
+            string str = String.Join(" ", tweet.tweetArray);
+            txtContent.Text = str;
+
         }
     }
 }
