@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,7 +34,14 @@ namespace Bank
 
             string str = String.Join("\n", email.emailBody);
             txtBody.Text = str;
+        }
 
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -13,8 +13,9 @@
         <TextBox x:Name="txtSubject" HorizontalAlignment="Left" Height="84" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,209,0,0" FontSize="24" BorderBrush="#FF7D7D7D" Background="#FFC4C4C4" IsReadOnly="True"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" Margin="54,29,0,0" FontSize="36"/>
         <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,29,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="54,365,0,0" FontSize="36" Text="Body:"/>
-        <TextBox x:Name="txtBody" HorizontalAlignment="Left" Height="373" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,365,0,0" FontSize="24" BorderBrush="#FF7D7D7D" Background="#FFC4C4C4" IsReadOnly="True" VerticalScrollBarVisibility="Visible"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="54,350,0,0" FontSize="36" Text="Body:"/>
+        <TextBox x:Name="txtBody" HorizontalAlignment="Left" Height="373" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,350,0,0" FontSize="24" BorderBrush="#FF7D7D7D" Background="#FFC4C4C4" IsReadOnly="True" VerticalScrollBarVisibility="Visible"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" Width="125" Margin="0,558,1289,0" FontSize="24" Height="50" Click="btnSubmit_Click"/>
 
     </Grid>
 </Window>
