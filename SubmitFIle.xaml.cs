@@ -3,6 +3,8 @@ using System.Windows.Controls;
 using System.IO;
 using System;
 using Microsoft.Win32;
+using DataLayer;
+using BusinessLayer;
 
 namespace Bank
 {
@@ -11,6 +13,7 @@ namespace Bank
     /// </summary>
     public partial class File : Window
     {
+        string filePath = null;
         public File()
         {
             InitializeComponent();
@@ -27,13 +30,56 @@ namespace Bank
 
             if (path == true)
             {
-                string filename = openFileDialog.FileName;
-                txtPath.Text = filename;
+                filePath = openFileDialog.FileName;
+                txtPath.Text = filePath;
             }
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
+            ReadFile file = new ReadFile(filePath);
+            Message msg = new Message();
+
+            try
+            {
+                if (file != null)
+                {
+                    msg.messageID = file.id.ToUpper();
+                    msg.messageBody = file.body;
+
+                    if (msg.messageID.StartsWith("S"))
+                    {
+                        SMS sms = msg.newSMS();
+
+                        this.Hide();
+                        DisplaySMS displayEmail = new DisplaySMS(sms);
+                        displayEmail.ShowDialog();
+                        this.Close();
+                    }
+                    else if (msg.messageID.StartsWith("E"))
+                    {
+                        Email email = msg.newEmail();
+
+                        this.Hide();
+                        DisplayEmail displayEmail = new DisplayEmail(email);
+                        displayEmail.ShowDialog();
+                        this.Close();
+                    }
+                    else if (msg.messageID.StartsWith("T"))
+                    {
+                        Tweet tweet = msg.newTweet();
+
+                        this.Hide();
+                        DisplayTweet displayTweet = new DisplayTweet(tweet);
+                        displayTweet.ShowDialog();
+                        this.Close();
+                    }
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 

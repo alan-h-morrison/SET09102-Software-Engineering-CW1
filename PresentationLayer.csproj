@@ -136,6 +136,10 @@
       <Project>{6d4903b5-3830-451c-8e7f-30bc4d6833a4}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{73a48b61-7297-4aea-a0cb-e1c3c96cd360}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
