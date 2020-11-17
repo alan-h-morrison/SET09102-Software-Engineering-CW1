@@ -1,0 +1,30 @@
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Release\Bank.exe.config
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Release\Bank.exe
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Release\Bank.pdb
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Release\Business Layer.dll
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Release\Business Layer.pdb
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\PresentationLayer.csprojAssemblyReference.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\DisplayEmail.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\DisplaySMS.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\DisplayTweet.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\SubmitFIle.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\MainWindow.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\SubmitMessage.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\App.g.cs
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\Bank_MarkupCompile.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\Bank_MarkupCompile.lref
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\DisplayEmail.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\DisplaySMS.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\DisplayTweet.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\SubmitFIle.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\MainWindow.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\SubmitMessage.baml
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\Bank.g.resources
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\Bank.Properties.Resources.resources
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\PresentationLayer.csproj.GenerateResource.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\PresentationLayer.csproj.CoreCompileInputs.cache
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\PresentationLayer.csproj.CopyComplete
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\Bank.exe
+E:\University\Year 3\Software Engineering\coursework\Bank\obj\Release\Bank.pdb
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Release\DataLayer.dll
+E:\University\Year 3\Software Engineering\coursework\Bank\bin\Release\DataLayer.pdb
