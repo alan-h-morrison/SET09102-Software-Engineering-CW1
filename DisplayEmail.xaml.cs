@@ -22,11 +22,23 @@ namespace Bank
     public partial class DisplayEmail : Window
     {
         private Email email;
+        private static ArrayList sirList;
         public DisplayEmail(Email newEmail)
         {
             InitializeComponent();
 
             email = newEmail;
+
+
+            if (sirList == null)
+            {
+                sirList = new ArrayList();
+            }
+            else if(email.isSIR)
+            {
+                sirList.Add(newEmail);
+            }
+
 
             txtID.Text = email.emailID;
             txtSender.Text = email.emailSender.ToString();

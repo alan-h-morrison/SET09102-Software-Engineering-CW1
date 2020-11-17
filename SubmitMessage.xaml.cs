@@ -62,7 +62,12 @@ namespace Bank
 
                     if (msg.messageID.StartsWith("S"))
                     {
-                        msg.newSMS();
+                        SMS sms = msg.newSMS();
+
+                        this.Hide();
+                        DisplaySMS displayEmail = new DisplaySMS(sms);
+                        displayEmail.ShowDialog();
+                        this.Close();
                     }
                     else if (msg.messageID.StartsWith("E"))
                     {

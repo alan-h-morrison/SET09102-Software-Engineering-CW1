@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,18 @@ namespace Bank
     /// </summary>
     public partial class DisplaySMS : Window
     {
-        public DisplaySMS()
+        private SMS sms;
+        public DisplaySMS(SMS newSMS)
         {
             InitializeComponent();
+
+            sms = newSMS;
+
+            txtID.Text = sms.smsID;
+            txtSender.Text = sms.smsSender;
+
+            string str = String.Join(" ", sms.smsArray);
+            txtContent.Text = str;
         }
     }
 }

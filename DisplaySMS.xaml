@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank"
         mc:Ignorable="d"
-        Title="DisplaySMS" Height="830" Width="1475.56">
+        Title="DisplaySMS" Height="500" Width="1475.56">
     <Grid>
-        
+        <Grid Height="400" VerticalAlignment="Top">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sender:" VerticalAlignment="Top" Margin="54,119,0,0" FontSize="36"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="54,209,0,0" FontSize="36"><Run Text="Conte"/><Run Text="nt"/><Run Text=":"/></TextBlock>
+            <TextBox x:Name="txtSender" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,119,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
+            <TextBox x:Name="txtContent" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,209,0,0" FontSize="24" BorderBrush="#FF7D7D7D" Background="#FFC4C4C4" IsReadOnly="True"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" Margin="54,29,0,0" FontSize="36"/>
+            <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,29,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
+
+        </Grid>
+
     </Grid>
 </Window>

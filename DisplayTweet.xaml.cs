@@ -1,5 +1,6 @@
 ﻿using BusinessLayer;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +22,7 @@ namespace Bank
     public partial class DisplayTweet : Window
     {
         private Tweet tweet;
+        private ArrayList sirList;
         public DisplayTweet(Tweet newTweet)
         {
             InitializeComponent();
