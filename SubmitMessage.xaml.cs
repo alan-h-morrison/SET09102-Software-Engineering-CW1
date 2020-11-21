@@ -20,6 +20,11 @@ namespace Bank
     /// </summary>
     public partial class SubmitMessage : Window
     {
+        private MainWindow mainWindow;
+        private DisplayEmail displayEmail;
+        private DisplaySMS displaySMS;
+        private DisplayTweet displayTweet;
+
         public SubmitMessage()
         {
             InitializeComponent();
@@ -28,7 +33,7 @@ namespace Bank
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            MainWindow mainWindow = new MainWindow();
+            mainWindow = new MainWindow();
             mainWindow.ShowDialog();
             this.Close();
         }
@@ -57,7 +62,7 @@ namespace Bank
             {
                 if (txtID.Text != "" || txtBody.Text != "")
                 {
-                    msg.messageID = txtID.Text.ToUpper();
+                    msg.messageID = txtID.Text;
                     msg.messageBody = txtBody.Text;
 
                     if (msg.messageID.StartsWith("S"))
@@ -65,8 +70,8 @@ namespace Bank
                         SMS sms = msg.newSMS();
 
                         this.Hide();
-                        DisplaySMS displayEmail = new DisplaySMS(sms);
-                        displayEmail.ShowDialog();
+                        displaySMS = new DisplaySMS(sms);
+                        displaySMS.ShowDialog();
                         this.Close();
                     }
                     else if (msg.messageID.StartsWith("E"))
@@ -74,7 +79,7 @@ namespace Bank
                         Email email = msg.newEmail();
 
                         this.Hide();
-                        DisplayEmail displayEmail = new DisplayEmail(email);
+                        displayEmail = new DisplayEmail(email);
                         displayEmail.ShowDialog();
                         this.Close();
                     }
@@ -83,7 +88,7 @@ namespace Bank
                         Tweet tweet = msg.newTweet();
 
                         this.Hide();
-                        DisplayTweet displayTweet = new DisplayTweet(tweet);
+                        displayTweet = new DisplayTweet(tweet);
                         displayTweet.ShowDialog();
                         this.Close();
                     }
