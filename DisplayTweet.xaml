@@ -5,14 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank"
         mc:Ignorable="d"
-        Title="DisplayTweet" Height="431.183" Width="1475.56">
+        Title="DisplayTweet" Height="896.183" Width="1475.56">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sender:" VerticalAlignment="Top" Margin="54,119,0,0" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="54,209,0,0" FontSize="36"><Run Text="Tweet Conte"/><Run Text="nt"/><Run Text=":"/></TextBlock>
-        <TextBox x:Name="txtSender" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,119,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
-        <TextBox x:Name="txtContent" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,209,0,0" FontSize="24" BorderBrush="#FF7D7D7D" Background="#FFC4C4C4" IsReadOnly="True"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" Margin="54,29,0,0" FontSize="36"/>
-        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,29,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sender:" VerticalAlignment="Top" Margin="54,205,0,0" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="54,295,0,0" FontSize="36"><Run Text="Tweet Conte"/><Run Text="nt"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="txtSender" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,205,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
+        <TextBox x:Name="txtContent" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,295,0,0" FontSize="24" BorderBrush="#FF7D7D7D" Background="#FFC4C4C4" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" Margin="54,115,0,0" FontSize="36"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,115,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
+        <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="122,472,0,0" Click="btnHome_Click" Height="50" FontSize="24"/>
+        <ListBox x:Name="lstTrending" HorizontalAlignment="Left" Height="339" VerticalAlignment="Top" Width="388" Margin="923,507,0,0" FontSize="24"/>
+        <ListBox x:Name="lstMention" HorizontalAlignment="Left" Height="339" VerticalAlignment="Top" Width="388" Margin="404,507,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="923,454,0,0" FontSize="36" Text="Trending:"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="404,454,0,0" FontSize="36" Text="Mentions:"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="122,542,0,0" Height="50" FontSize="24" Click="btnBack_Click"/>
+        <Button x:Name="btnEmail" Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="122,612,0,0" Height="50" FontSize="24" Click="btnEmail_Click"/>
+        <Button x:Name="btnSMS" Content="SMS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="122,682,0,0" Height="50" FontSize="24" Click="btnSMS_Click"/>
+        <Button x:Name="btnFoward" Content="&gt;&gt;&gt;" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="124" Margin="1187,0,0,425" FontSize="24" Height="50" Click="btnFoward_Click" RenderTransformOrigin="0.46,-2.52"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="54,10,0,0" FontSize="48" TextDecorations="Underline" FontWeight="Bold" Text="Tweet Display"/>
 
     </Grid>
 </Window>

@@ -5,15 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank"
         mc:Ignorable="d"
-        Title="DisplaySMS" Height="500" Width="1475.56">
+        Title="DisplaySMS" Height="564.597" Width="1475.56">
     <Grid>
-        <Grid Height="400" VerticalAlignment="Top">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sender:" VerticalAlignment="Top" Margin="54,119,0,0" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="54,209,0,0" FontSize="36"><Run Text="Conte"/><Run Text="nt"/><Run Text=":"/></TextBlock>
-            <TextBox x:Name="txtSender" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,119,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
-            <TextBox x:Name="txtContent" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,209,0,0" FontSize="24" BorderBrush="#FF7D7D7D" Background="#FFC4C4C4" IsReadOnly="True"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" Margin="54,29,0,0" FontSize="36"/>
-            <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,29,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
+        <Grid Height="534" VerticalAlignment="Top">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sender:" VerticalAlignment="Top" Margin="50,211,0,0" FontSize="36"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="50,301,0,0" FontSize="36"><Run Text="Conte"/><Run Text="nt"/><Run Text=":"/></TextBlock>
+            <TextBox x:Name="txtSender" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,211,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
+            <TextBox x:Name="txtContent" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,301,0,0" FontSize="24" BorderBrush="#FF7D7D7D" Background="#FFC4C4C4" IsReadOnly="True"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" Margin="50,121,0,0" FontSize="36"/>
+            <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,121,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
+            <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="50,441,0,-22" Height="50" FontSize="24" Click="btnHome_Click"/>
+            <Button x:Name="btnTweet" Content="Tweet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="450,441,0,-22" Height="50" FontSize="24" Click="btnTweet_Click"/>
+            <Button x:Name="btnEmail" Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="650,441,0,-22" Height="50" FontSize="24" Click="btnEmail_Click"/>
+            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="250,441,0,-22" Height="50" FontSize="24" Click="btnBack_Click"/>
+            <Button x:Name="btnFoward" Content="&gt;&gt;&gt;" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="124" Margin="1187,0,0,43" FontSize="24" Height="50" Click="btnFoward_Click"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="50,16,0,0" FontSize="48" TextDecorations="Underline" FontWeight="Bold"><Run Text="SMS"/><Run Text=" "/><Run Text="Display"/></TextBlock>
 
         </Grid>
 

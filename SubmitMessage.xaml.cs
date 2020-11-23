@@ -30,6 +30,7 @@ namespace Bank
             InitializeComponent();
         }
 
+        //BACK BUTTON - returns to main window
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -38,33 +39,40 @@ namespace Bank
             this.Close();
         }
 
+        // CLEAR ALL BUTTON - clear text from id and message field
         private void btnClearAll_Click(object sender, RoutedEventArgs e)
         {
             txtID.Clear();
             txtBody.Clear();
         }
 
+        // CLEAR ID BUTTON - clear text from id field
         private void btnClearID_Click(object sender, RoutedEventArgs e)
         {
             txtID.Clear();
         }
 
+        // CLEAR MESSAGE BUTTON - clear text from message field
         private void btnClearMessage_Click(object sender, RoutedEventArgs e)
         {
             txtBody.Clear();
         }
 
+        // SUBMIT BUTTON - process message entered in fields and display it to the screen
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
             Message msg = new Message();
 
+            // Try-Catch loop that detects argument exception
             try
             {
+                // checks if the header and body are not empty
                 if (txtID.Text != "" || txtBody.Text != "")
                 {
                     msg.messageID = txtID.Text;
                     msg.messageBody = txtBody.Text;
 
+                    // Checks the id to identify the type of message that is generated
                     if (msg.messageID.StartsWith("S"))
                     {
                         SMS sms = msg.newSMS();

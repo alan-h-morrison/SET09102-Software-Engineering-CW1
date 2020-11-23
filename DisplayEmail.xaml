@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bank"
         mc:Ignorable="d"
-        Title="DisplayEmail" Height="830" Width="1475.56">
-    <Grid>
+        Title="DisplayEmail" Height="909.053" Width="1993">
+    <Grid x:Name="lstQuarantine" Height="875" VerticalAlignment="Top">
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sender:" VerticalAlignment="Top" Margin="54,119,0,0" FontSize="36"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="54,209,0,0" FontSize="36" Text="Subject:"/>
         <TextBox x:Name="txtSender" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,119,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
@@ -15,7 +15,15 @@
         <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="48" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,29,0,0" FontSize="24" Background="#FFC4C4C4" BorderBrush="#FF7D7D7D" IsReadOnly="True"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="54,350,0,0" FontSize="36" Text="Body:"/>
         <TextBox x:Name="txtBody" HorizontalAlignment="Left" Height="373" TextWrapping="Wrap" VerticalAlignment="Top" Width="907" Margin="404,350,0,0" FontSize="24" BorderBrush="#FF7D7D7D" Background="#FFC4C4C4" IsReadOnly="True" VerticalScrollBarVisibility="Visible"/>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" Width="125" Margin="0,558,1289,0" FontSize="24" Height="50" Click="btnSubmit_Click"/>
+        <Button x:Name="btnHome" Content="Home" VerticalAlignment="Top" Margin="136,470,0,0" FontSize="24" Height="50" Click="btnHome_Click" HorizontalAlignment="Left" Width="124"/>
+        <ListBox x:Name="lstSIR" HorizontalAlignment="Left" Height="283" VerticalAlignment="Top" Width="538" Margin="1372,73,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="1372,29,0,0" FontSize="36" Text="SIR List" Height="39" RenderTransformOrigin="0.525,0.372"/>
+        <ListBox x:Name="lstURL" HorizontalAlignment="Left" Height="318" VerticalAlignment="Top" Width="538" Margin="1372,405,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="1372,361,0,0" FontSize="36" Height="39"><Run Text="Quarantine"/><Run Text=" "/><Run Text="L"/><Run Text="i"/><Run Text="st"/></TextBlock>
+        <Button x:Name="btnTweet" Content="Tweet" VerticalAlignment="Top" Margin="135,640,0,0" FontSize="24" Height="50" Click="btnTweet_Click" HorizontalAlignment="Left" Width="124"/>
+        <Button x:Name="btnSMS" Content="SMS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="136,725,0,0" Height="50" FontSize="24" Click="btnSMS_Click"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="135,555,0,0" Height="50" FontSize="24" Click="btnBack_Click"/>
+        <Button x:Name="btnFoward" Content="&gt;&gt;&gt;" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="124" Margin="1187,0,0,44" FontSize="24" Height="50" Click="btnFoward_Click"/>
 
     </Grid>
 </Window>
